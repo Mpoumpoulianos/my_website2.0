@@ -1,0 +1,138 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Theme Variables */
+:root {
+  --bg: #1e1e1e;
+  --text: #d4d4d4;
+  --primary: #00ff99;
+  --section: #252526;
+  --project-bg: #333;
+}
+
+.light {
+  --bg: #f0f0f0;
+  --text: #222;
+  --primary: #0077cc;
+  --section: #ffffff;
+  --project-bg: #e6e6e6;
+}
+
+/* Header */
+header {
+  background-color: var(--section);
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  color: var(--primary);
+}
+
+/* Navbar */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #333;
+}
+
+nav ul li { margin: 0 15px; }
+
+nav ul li a {
+  color: var(--text);
+  text-decoration: none;
+}
+nav ul li a:hover { color: var(--primary); }
+
+/* Main */
+main {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px 0;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #333;
+  background-color: var(--section);
+  border-radius: 8px;
+}
+
+section h2 { color: var(--primary); margin-bottom: 10px; }
+
+/* Avatar */
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  gap: 15px;
+  font-size: 2rem;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.project-card {
+  padding: 15px;
+  background: var(--project-bg);
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+.project-card:hover { transform: scale(1.05); }
+.project-card a { color: var(--primary); text-decoration: none; }
+
+/* Toggle button */
+.toggle-projects {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: var(--text);
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: var(--primary);
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  color: #fff;
+}
