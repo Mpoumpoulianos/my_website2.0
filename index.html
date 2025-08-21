@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stelios Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1 class="typing-effect">Welcome to my Website!!!</h1>
+  </header>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="avatar" class="avatar">
+      <p>Hello! I'm <strong>Stelios</strong>, a developer passionate about creating awesome websites and coding projects.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <i class="fa-brands fa-html5" title="HTML5" style="color:#E34F26;"></i>
+        <i class="fa-brands fa-css3-alt" title="CSS3" style="color:#1572B6;"></i>
+        <i class="fa-brands fa-js" title="JavaScript" style="color:#F7DF1E;"></i>
+        <i class="fa-brands fa-java" title="Java" style="color:#007396;"></i>
+        <i class="fa-solid fa-database" title="MySQL" style="color:#00758F;"></i>
+        <i class="fa-solid fa-c" title="C" style="color:#A8B9CC;"></i>
+        <i class="fa-solid fa-code" title="C++" style="color:#00599C;"></i>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div id="projects" class="projects"></div>
+      <button id="toggle-projects" class="toggle-projects">View More</button>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:cs05067@uowm.gr">cs05067@uowm.gr</a></p>
+      <p>
+        <a href="https://github.com/Mpoumpoulianos" target="_blank">
+          <i class="fa-brands fa-github"></i> My GitHub
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Stelios - My Code Website</p>
+  </footer>
+
+  <!-- Dark/Light Toggle -->
+  <button id="theme-toggle" class="theme-toggle">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+</body>
+</html>
